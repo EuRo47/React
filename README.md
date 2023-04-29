@@ -1,2 +1,2 @@
 # React
-For React
+For React Apps
