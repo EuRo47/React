@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { CvImage } from "./components/image";
+import { ContactInfo } from './components/ContactInfo';
+import { WorkExp } from './components/WorkExp';
+
+const photoLink ="https://s.abcnews.com/images/US/emoji-1-abc-221220_1671573538915_hpEmbed_1x1_992.jpg"
+
+let bendToMyWill = photoLink.toString()
+console.log(bendToMyWill)
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+    <CvImage a = {bendToMyWill} />
+    <ContactInfo />
+    <WorkExp />
     </div>
   );
 }

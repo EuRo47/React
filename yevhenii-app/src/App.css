@@ -24,15 +24,431 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*Insert*/
+
+/*Кольори*/
+/*Відступи*/
+
+.my-theme html {
+  color: #f7f7f7;
+  font-family: "Inter";
+  font-style: normal;
+  margin: 0;
+}
+.my-theme h1::before {
+  color: #c24f47;
+  content: "Yevhenii";
+}
+.my-theme h3,
+.my-theme .poss-name {
+  font-weight: 600;
+  font-size: 36px;
+  color: #eeeeee;
+  border-bottom: 5px solid #eeeeee;
+  padding-bottom: 15px;
+}
+.my-theme article p {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.my-theme .skills,
+.my-theme .summary > p {
+  font-weight: 600;
+  font-size: 16px;
+  color: #f7f7f7;
+}
+.my-theme a {
+  color: #2c4735;
+  text-decoration: underline;
+}
+.my-theme a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+.my-theme a:hover {
+  text-decoration: none;
+}
+.my-theme .info.persona {
+  background-color: #0697eb;
+  padding-left: 40px;
+  padding-right: 52px;
+  border-left: 1px solid #000000;
+  border-top: none;
+  border-bottom: none;
+  /*Тінь*/
+  box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
+  z-index: 1;
+}
+.my-theme .info.presentation {
+  padding-left: 54px;
+  padding-right: 55px;
+  width: 100%;
+  border: none;
+  background-color: #c24f47;
+}
+.my-theme.we {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 31px 0 15px 0;
+  opacity: 0.7;
+  color: #f7f7f7;
+
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.my-theme h4 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 36px 0 11px 0;
+  color: #f7f7f7;
+}
+.my-theme .ua,
+.my-theme .en {
+  margin-top: 15px;
+  color: #f7f7f7;
+}
+.my-theme p,
+.my-theme ol {
+  color: #f7f7f7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*Кольори*/
+/*Відступи*/
+
+.main-theme html {
+  color: #263036;
+  font-family: "Inter";
+  font-style: normal;
+  margin: 0;
+}
+.main-theme h1::before {
+  color: #ffffff;
+  content: "Yevhenii";
+}
+.main-theme h3,
+.main-theme .poss-name {
+  font-weight: 600;
+  font-size: 36px;
+  color: #1e1e1e;
+  border-bottom: 5px solid #1e1e1e;
+  padding-bottom: 15px;
+}
+.main-theme article p {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.main-theme .skills,
+.main-theme .summary > p {
+  font-weight: 600;
+  font-size: 16px;
+  color: #263036;
+}
+.main-theme a {
+  color: #1c2e8c;
+  text-decoration: underline;
+}
+.main-theme a:visited {
+  color: #005;
+  text-decoration: underline;
+}
+.main-theme a:hover {
+  text-decoration: none;
+}
+.main-theme .info.persona {
+  background-color: #86a3b4;
+  padding-left: 40px;
+  padding-right: 52px;
+  border-left: 1px solid #000000;
+  border-top: none;
+  border-bottom: none;
+  /*Тінь*/
+  box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
+  z-index: 1;
+}
+.main-theme .info.presentation {
+  padding-left: 54px;
+  padding-right: 55px;
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+}
+.main-theme .we {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 31px 0 15px 0;
+  opacity: 0.7;
+  color: #263036;
+}
+.main-theme h4 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 36px 0 11px 0;
+  color: #263036;
+}
+.main-theme .ua,
+.main-theme .en {
+  margin-top: 15px;
+  color: #263036;
+}
+.main-theme p,
+.main-theme ol {
+  color: #263036;
+}
+
+/*Фікс зайвих відступів*/
+body {
+  margin: 0;
+  height: 100%;
+  padding: 10px;
+}
+
+section {
+  border: 1px solid #000000;
+}
+
+.name-photo {
+  height: 443px;
+  width: 293px;
+}
+
+/*Плавність-out, яку не просили робити*/
+h1 {
+  font-style: italic;
+  color: #1c2e8c;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+/*Cтилізація під-заголовків розділів*/
+h4 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 36px 0 11px 0;
+}
+
+.ua,
+.en {
+  margin-top: 15px;
+}
+
+.we {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 31px 0 15px 0;
+  opacity: 0.7;
+
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  margin: 0 5px 20px 5px;
+}
+
+.we:hover {
+  transition: 0.87s;
+  opacity: 1;
+}
+
+.info.presentation p {
+  margin-bottom: 50px;
+}
+
+/*Layout*/
+main {
+  display: flex;
+}
+
+/*Шкода що border у правій частины має інший padding*/
+.info.presentation h3 {
+  padding-bottom: 28px;
+}
+
+/*Стилізація списку в два стовбчика*/
+.skills ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  list-style-type: square;
+}
+
+/*Вирівнювання переліку*/
+ol {
+  padding-left: 15px;
+}
+
+/*Адаптив*/
+@media (max-width: 440px) {
+  html {
+    width: 440px;
   }
-  to {
-    transform: rotate(360deg);
+  main {
+    display: flex;
+    flex-direction: column;
   }
+  .info.presentation,
+  .info.persona {
+    padding-left: 31px;
+    padding-right: 30px;
+    width: 420px;
+    border: none;
+  }
+  img {
+    position: absolute;
+    width: 481px;
+    height: 293px;
+    left: 1px;
+    transform: none;
+    box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.25);
+  }
+  img:hover {
+    position: absolute;
+    width: 481px;
+    height: 293px;
+    left: 1px;
+    transform: none;
+    box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+/*Схоже, що JS dev, створив це, щоб писати стилі використовуючи псевдо-синтаксис JS.
+Створи змінну спершу, потім дай їй якесь значення. Мало функцій в JS, напихаємо щей в css.
+Думаю ці люди DOM не в index роблять через теги, а через document.createElement() */
+/*Створення змінної, яка буде приймти значення*/
+/*Це mixin, який прийняв строку як ім'я, і все інше*/
+@keyframes opacity-appear {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Створення змінної яка підтягує кей-фрейми та приймає значення як аргументи*/
+/*Анімація для правої частини*/
+/*Mixin, який використовує структуру animation*/
+.summary {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-name: opacity-appear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.skills {
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+  animation-name: opacity-appear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.work-exp {
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-name: opacity-appear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.education {
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-name: opacity-appear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.achiev {
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-name: opacity-appear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+/*Анімація для лівої частини*/
+.name-photo {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-name: opacity-appear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.poss-name {
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+  animation-name: opacity-appear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.contact {
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-name: opacity-appear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  border: 2px solid black;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.hire-link {
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-name: opacity-appear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.languages {
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-name: opacity-appear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.letter {
+  border: 3.5px solid black;
+  border-radius: 7px;
+  padding: 0px 3px;
+  margin-right: 5px;
+  font-weight: bold;
+} /*# sourceMappingURL=styles.css.map */
+
+.contact h3,
+.contact h4 {
+  margin: 10px;
+}
+.contact h3 {
+  font-size: x-large;
+}
+
+.contact div {
+  display: inline-block;
+  border: 2px solid black;
+  margin: 0 5px 10px 5px;
+  border-radius: 22px;
+  padding: 10px;
+}
+img {
+  padding: 10px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  border-radius: 22px;
 }
