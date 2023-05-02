@@ -451,4 +451,6 @@ img {
   border: 2px solid black;
   margin-bottom: 10px;
   border-radius: 22px;
+  height: 100px;
+  width: 100px;
 }
